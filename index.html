@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coca-Cola Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="https://us.coca-cola.com/" target="_blank"><img src="logo.png" class="logo"</a>
+            <ul>
+                <li><a href="#" onclick="imgSlider('ihere-removebg-preview.png');changeBgColor('#ffe4e1')">Home</a></li>
+                <li><a href="https://us.coca-cola.com/products" target="_blank">Products</a></li>
+                <li><a href="https://us.coca-cola.com/products/coca-cola-value-collection" target="_blank">What's New</a></li>
+                <li><a href="https://www.coca-colastore.com/" target="_blank">Shop</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>นี่คือโค้กที่ออกมาในโอกาศพิเศษต่างๆ</p>
+                <a href="https://us.coca-cola.com/products" target="_blank">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="ihere-removebg-preview.png" class="Coca-Cola">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="vanilla.png" onclick="imgSlider('vanilla.png');changeBgColor('#ff8ac3')"></li>
+            <li><img src="Caffeine.png" onclick="imgSlider('Caffeine.png');changeBgColor('#afeeee ')"></li>
+            <li><img src="ea.png" onclick="imgSlider('ea.png');changeBgColor('#e5e4e2')"></li>
+            <li><img src="gg.png" onclick="imgSlider('gg.png');changeBgColor('#dd93ff')"></li>
+            <li><img src="ultimate-pdp-thumbnail-can-zs-removebg-preview.png" onclick="imgSlider('ultimate-pdp-thumbnail-can-zs-removebg-preview.png');changeBgColor('#f7e98e')"></li>
+           
+            
+            
+            
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/cocacolaTH" target="_blank"><img src="facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/cocacola_th/" target="_blank"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.Coca-Cola').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
